@@ -3,8 +3,25 @@
   align-items: center;
   text-align: center;
 }
+.authors{
+    font-style: italic;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #cd45cd;
+}
 .titleName{
     font-size: 2rem;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.contents{
+    font-size: 25px;
+}
+.images{
+
+    display: inline-flex;
 }

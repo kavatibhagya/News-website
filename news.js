@@ -4,11 +4,10 @@ function newsFetch() {
     .then(data =>{
         
          const newsData = document.getElementById("newsData");
-         const mainContent = document.getElementById("mainContent");
-         for(var i=0; i<data.articles.length; i++){
+         for(var i=0; i<5; i++){
          const authorName = document.createElement("div");
-         
         authorName.innerText = data.articles[i].author;
+        authorName.classList.add('authors');
 
         const title = document.createElement("div");
         title.innerText = data.articles[i].title;
@@ -17,16 +16,18 @@ function newsFetch() {
         const image = document.createElement('img');
         image.setAttribute("src", data.articles[i].urlToImage);
         image.setAttribute("height", "500");
-        image.setAttribute("width" , "500"); 
+        image.setAttribute("width" , "1000"); 
+        image.classList.add('images');
         
         const newsContent = document.createElement("div");
         newsContent.innerText = data.articles[i].content;
+        newsContent.classList.add('contents');
 
 
         newsData.appendChild(authorName);
          newsData.appendChild(title);
          newsData.appendChild(image);
-         mainContent.appendChild(newsContent)
+         newsData.appendChild(newsContent);
          }
 
     }) 
