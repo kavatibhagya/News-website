@@ -1,0 +1,10 @@
+#newsData{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.titleName{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
