@@ -1,5 +1,5 @@
 function newsFetch() {
-    fetch("http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ca46e164792a44e897560ff6f4a577e1")
+    fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ca46e164792a44e897560ff6f4a577e1")
     .then(response => response.json())
     .then(data =>{
         
